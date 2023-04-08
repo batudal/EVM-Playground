@@ -5,6 +5,10 @@ const { withPlausibleProxy } = require('next-plausible')
 
 module.exports = withPlausibleProxy()({
   reactStrictMode: true,
+  images: {
+    loader: 'imgix',
+    path: '/'
+  },
   webpack5: true,
   serverRuntimeConfig: {
     APP_ROOT: __dirname,

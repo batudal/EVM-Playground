@@ -3,9 +3,6 @@ import Head from 'next/head'
 
 import { getAbsoluteURL } from 'util/browser'
 
-import Footer from './Footer'
-import Nav from './Nav'
-
 const HomeLayout: NextPage = ({ children }) => {
   return (
     <>
@@ -27,11 +24,7 @@ const HomeLayout: NextPage = ({ children }) => {
       </Head>
 
       <div className="flex flex-col h-screen justify-between">
-        <Nav />
-
-        <main className="mb-auto mt-20 md:mt-28 pb-10">{children}</main>
-
-        <Footer />
+        <main className="mb-auto">{children}</main>
       </div>
     </>
   )

@@ -105,7 +105,7 @@ const Editor = ({ readOnly = false }: Props) => {
   const [unit, setUnit] = useState(ValueUnit.Wei as string)
 
   const [contract, setContract] = useState<Contract | undefined>(undefined)
-  const [isExpanded, setIsExpanded] = useState(false)
+  const [isExpanded, setIsExpanded] = useState(true)
   const [methodByteCode, setMethodByteCode] = useState<string | undefined>()
 
   const log = useCallback(
